@@ -1,10 +1,4 @@
-# Download one file on Dahu/Cargo:
-wget --no-check-certificate --user="pierre.zeiger@gmail.com" --password="passwd" sftp://smos-diss.eo.esa.int:/SMOS/L1CL/MIR_SCLF1C/2023/05/10/SM_OPER_MIR_SCLF1C_20230510T003747_20230510T013100_724_001_1.zip
-
-# Download recursively directories (old command -> ftp):
-wget -m --no-check-certificate --user="pierre.zeiger@gmail.com" --ask-password ftp://smos-diss.eo.esa.int:/SMOS/L1CL/MIR_SCLF1C/2020/01
-
-# Nouvelle commande (FTPS)
+# Download recursively directories (new commande -> FTPS)
 wget -m --ftps-implicit --no-check-certificate --ftp-user="pierre.zeiger@gmail.com" --ask-password ftps://smos-diss.eo.esa.int:990/SMOS/L1CL/MIR_SCLF1C/2024/04
 
 # Unzip recursively files (takes a very long time!):
